@@ -55,7 +55,7 @@ egg.init({
 * phrase: string (alphanumeric)
 * keys: array of string values
 * codes: array of ints
-* hatch: boolean | default false | if true, the listener that triggers the callback is set to active
+* hatch: boolean | default true | if true, the listener that triggers the callback is set to active
 
 > callback
 >> A funciton that executes when the successful code is entered by the user
