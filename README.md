@@ -62,3 +62,17 @@ egg.init({
 
 ## hatch()
 > Method that hatches egg instance and activates listener
+> Example
+
+```javascript
+// Won't be hatched
+egg.init({
+  hatch: false,
+  konami: true
+}, function() {
+  alert('You\'ve activated my trap card!');
+});
+
+// Now is hatched (activated)
+egg.hatch();
+```
