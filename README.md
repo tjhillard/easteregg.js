@@ -1,8 +1,6 @@
 # easteregg.js
 :tada: Fun and easy way to add easter eggs and cheat codes to your webpages :video_game:
 
-# API
-
 ### Konami Code
 (up, up, down, down, left, right, left, right, b, a)
 ```javascript
@@ -33,7 +31,7 @@ Array of Strings
 egg.init({
   keys: ['c', 'o', 'o', 'l', 'Enter']
 }, function() {
-  alert('Keys array callback!');
+  alert('Keys callback!');
 });
 ```
 
@@ -44,9 +42,11 @@ Array of Integers
 egg.init({
   codes: [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 }, function() {
-  alert('KeyCodes array!');
+  alert('KeyCodes callback!');
 });
 ```
+
+# API
 
 ## init(options, callback)
 > options
@@ -62,6 +62,7 @@ egg.init({
 
 ## hatch()
 > Method that hatches egg instance and activates listener
+>> Note: Requires hatch to be false in the init method
 > Example
 
 ```javascript
