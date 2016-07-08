@@ -25,7 +25,7 @@ egg.init({
 
 // Egg with codes options
 egg.init({
-  codes: [35, 36, 37, 38]
+  codes: [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 }, function() {
   alert('KeyCodes array!');
 });
