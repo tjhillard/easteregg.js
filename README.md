@@ -1,5 +1,5 @@
 # EasterEgg.js
-:tada: Fun and easy way to add easter eggs and cheat codes to your webpages :tada:
+:tada: Fun and easy way to add easter eggs and cheat codes to your webpages :video_game:
 
 # API
 
