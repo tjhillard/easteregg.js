@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script src="dist/index.js"></script>
+    <script>
+        new Egg({
+            konami: true,
+            active: true,
+            canRehatch: false
+        }, function () {
+            return console.log('hatched')
+        });
+    </script>
+</body>
+</html>

@@ -2,10 +2,25 @@
   "name": "easteregg.js",
   "version": "0.0.1",
   "description": "Fun and easy javascript library for adding easter eggs and cheat codes into your webpages",
-  "main": "easteregg.js",
+  "main": "dist/index.js",
+  "keywords": [
+    "easter egg",
+    "konami",
+    "cheat codes"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tjhillard/easteregg.js.git"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "rollup -c",
+    "prepublish": "npm run compile"
   },
   "author": "TJ Hillard",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^0.33.1",
+    "rollup-plugin-buble": "^0.12.1"
+  }
 }
