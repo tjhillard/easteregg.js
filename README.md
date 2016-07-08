@@ -1,7 +1,8 @@
 # EasterEgg.js
-Fun and easy way to add easter eggs and cheat codes to your webpages
+:tada: Fun and easy way to add easter eggs and cheat codes to your webpages :tada:
 
 # API
+
 ### Konami Code
 (up, up, down, down, left, right, left, right, b, a)
 ```javascript
@@ -46,3 +47,15 @@ egg.init({
   alert('KeyCodes array!');
 });
 ```
+
+## init(options, callback)
+> options
+>> An object that can contain the following
+* konami: boolean
+* phrase: string (alphanumeric)
+* keys: array of string values
+* codes: array of ints
+* hatch: boolean | determines if the trigger is active | default = false
+
+> callback
+>> A funciton that executes when the successful code is entered by the user
