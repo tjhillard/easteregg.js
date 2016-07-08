@@ -1,4 +1,4 @@
-# EasterEgg.js
+# easteregg.js
 :tada: Fun and easy way to add easter eggs and cheat codes to your webpages :video_game:
 
 # API
@@ -55,7 +55,10 @@ egg.init({
 * phrase: string (alphanumeric)
 * keys: array of string values
 * codes: array of ints
-* hatch: boolean | determines if the trigger is active | default = false
+* hatch: boolean | default false | if true, the listener that triggers the callback is set to active
 
 > callback
 >> A funciton that executes when the successful code is entered by the user
+
+## hatch()
+> Method that hatches egg instance and activates listener
