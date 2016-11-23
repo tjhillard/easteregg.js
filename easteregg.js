@@ -34,7 +34,6 @@ var Egg = (function(window){
 
           // active?
           if (options.hatch === false) {
-            console.log(false);
             egg.active = false;
           }
           // phrase?
@@ -43,7 +42,7 @@ var Egg = (function(window){
               egg.phrase.push(options.phrase[i]);
             }
             egg.isPhrase = true;
-            console.log('Secret Phrase: ', egg.phrase);
+            // console.log('Secret Phrase: ', egg.phrase);
           }
           // konami?
           if (options.konami) {
@@ -93,8 +92,8 @@ var Egg = (function(window){
               if (egg.isKonami) {
                 var konamiKeys = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
                 egg.input.push(code);
-                console.log('Got keystroke: ', event);
-                console.log('Current Phrase: ', egg.input);
+                // console.log('Got keystroke: ', event);
+                // console.log('Current Phrase: ', egg.input);
 
                 if (egg.input[egg.input.length - 1] !== konamiKeys[egg.input.length - 1]) {
                   egg.input = [];
@@ -120,8 +119,8 @@ var Egg = (function(window){
                     return;
                   }
                 }
-                console.log('Got keystroke: ', event);
-                console.log('Current Phrase: ', egg.input);
+                // console.log('Got keystroke: ', event);
+                // console.log('Current Phrase: ', egg.input);
               }
               if (egg.isCodes) {
                 egg.input.push(code);
@@ -135,8 +134,8 @@ var Egg = (function(window){
                     return;
                   }
                 }
-                console.log('Got keystroke: ', event);
-                console.log('Current Input: ', egg.input);
+                // console.log('Got keystroke: ', event);
+                // console.log('Current Input: ', egg.input);
               }
               if (egg.isKeys) {
                 egg.input.push(code);
@@ -150,8 +149,8 @@ var Egg = (function(window){
                     return;
                   }
                 }
-                console.log('Got keystroke: ', event);
-                console.log('Current Input: ', egg.input);
+                // console.log('Got keystroke: ', event);
+                // console.log('Current Input: ', egg.input);
               }
             }
           };
@@ -165,6 +164,6 @@ var Egg = (function(window){
         window.egg = define_easteregg();
     }
     else{
-        console.log("egg is already defined.");
+        console.warn("egg is already defined.");
     }
 })(window);
