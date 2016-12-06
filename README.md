@@ -60,6 +60,8 @@ egg.init({
 > callback
 >> A funciton that executes when the successful code is entered by the user
 
+#### Note: Only use 1 egg.init() per page.
+
 ## hatch()
 > Method that hatches egg instance and activates listener
 >> Note: Requires hatch to be false in the init method
