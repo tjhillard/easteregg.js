@@ -7,7 +7,14 @@
   <body>
     <p>EasterEgg.js</p>
     <p>Type <strong>up, up, down, down, left, right, left, right, b, a</strong> to demo!</p>
-    <script src="easteregg.js" charset="utf-8"></script>
-    <script src="demo.js" charset="utf-8"></script>
+    <script src="src/easteregg.js" charset="utf-8"></script>
+    <script charset="utf-8">
+        // Simple Konami Code listener with callback
+        new Egg({
+          konami: true
+        }, function() {
+          alert('Konami Code Activated!');
+        });
+    </script>
   </body>
 </html>

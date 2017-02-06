@@ -4,8 +4,11 @@
   "description": "Fun and easy javascript library for adding easter eggs and cheat codes into your webpages",
   "main": "easteregg.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src -d lib"
   },
   "author": "TJ Hillard",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.22.2"
+  }
 }
